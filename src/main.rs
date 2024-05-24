@@ -26,7 +26,7 @@ fn main() {
                 println!("ERROR!");
                 break;
             }
-            
+
             Ordering::Greater => { 
                 if input % 2 == 0 { 
                     input = shrink(input);
@@ -44,13 +44,12 @@ fn main() {
             }
         }
     }
-}
 
-fn shrink(value: u128) -> u128 { 
+    fn shrink(value: u128) -> u128 { 
     return value/2; 
-}
+    }
 
-fn grow(value: u128) -> u128 { 
-    return (value*3 + 1)/2;
+    fn grow(value: u128) -> u128 { 
+        return (value*3 + 1)/2;
+    }
 }
-
