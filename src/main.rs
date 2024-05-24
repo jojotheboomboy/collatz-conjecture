@@ -26,6 +26,7 @@ fn main() {
                 println!("ERROR!");
                 break;
             }
+            
             Ordering::Greater => { 
                 if input % 2 == 0 { 
                     input = shrink(input);
@@ -35,8 +36,8 @@ fn main() {
                     input = grow(input);
                     collatz_value += 2; 
                 }
-
             }
+
             Ordering::Equal => {
                 println!("collatz_value = {collatz_value}");
                 break;
